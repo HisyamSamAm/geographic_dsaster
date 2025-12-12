@@ -54,7 +54,7 @@ export function DisasterSidebar({
       {/* Mobile overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-40 md:hidden"
+          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-[1500] md:hidden"
           onClick={onClose}
           aria-hidden="true"
         />
@@ -63,7 +63,7 @@ export function DisasterSidebar({
       {/* Sidebar */}
       <aside
         className={`
-          fixed md:relative inset-y-0 left-0 z-50
+          fixed md:relative inset-y-0 left-0 z-[2000]
           w-80 h-full bg-card border-r border-border
           transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
